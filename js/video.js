@@ -4,6 +4,9 @@ var vid = document.getElementById("videoplayer");
 vid.load();
 vid.autoplay = false;
 vid.loop = false;
+var volVal = document.getElementById("slider").value;
+vid.volume = volVal / 100;
+document.getElementById("volume").innerHTML = volVal + "%";
 
 // play button
 
